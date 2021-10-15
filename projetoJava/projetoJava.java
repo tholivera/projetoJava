@@ -77,7 +77,7 @@ public class projetoJava {
 
 					switch (opcao1) {
 					case 1:
-						
+
 						System.out.println(" +---------------------------------------+");
 						System.out.println(" |  Todo valor doado será convertido em  |");
 						System.out.println(" |      alimentos, cobertores, roupas    |");
@@ -93,9 +93,9 @@ public class projetoJava {
 						System.out.println(" | Acesso o link para visualizar o boleto|");
 						System.out.println(" |    https://ongjavadobem.org/pay       |");
 						System.out.println(" +---------------------------------------+");
-						
+
 						break;
-						
+
 					case 2:
 						System.out.println(" +---------------------------------------+");
 						System.out.println(" |  Suas doações de alimentos devem ser  |");
@@ -212,7 +212,7 @@ public class projetoJava {
 							System.out.println(" |            Opção inválida.            |");
 							System.out.println(" |      Por favor, digite novamente.     |");
 							System.out.println(" +---------------------------------------+");
-							}
+						}
 						break;
 					}
 					break;
