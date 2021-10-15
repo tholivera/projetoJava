@@ -24,15 +24,18 @@ public class projetoJava {
 		do {
 
 			System.out.println(" +---------------------------------------+");
-			System.out.println(" |             MENU DE OPÇÕES            |");
+			System.out.println(" |     Quem você gostaria de ajudar?     |");
 			System.out.println(" +---------------------------------------+");
-			System.out.println(" |       1- Ajudar Moradores de Rua      |");
 			System.out.println(" +---------------------------------------+");
-			System.out.println(" |       2- Ajudar Orfanatos Carentes    |");
+			System.out.println(" |           MENU DE OPÇÕES              |");
 			System.out.println(" +---------------------------------------+");
-			System.out.println(" |       3- Ajudar Asilos Carentes       |");
+			System.out.println(" |     1- Ajudar Moradores de Rua        |");
 			System.out.println(" +---------------------------------------+");
-			System.out.println(" |       0- Sair                         |");
+			System.out.println(" |     2- Ajudar Orfanatos Carentes      |");
+			System.out.println(" +---------------------------------------+");
+			System.out.println(" |     3- Ajudar Asilos Carentes         |");
+			System.out.println(" +---------------------------------------+");
+			System.out.println(" |     0- Sair                           |");
 			System.out.println(" +---------------------------------------+");
 
 			System.out.println("\n ---------> Digite uma Opção: ");
@@ -79,39 +82,54 @@ public class projetoJava {
 					case 1:
 
 						System.out.println(" +---------------------------------------+");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
 						System.out.println(" |  Todo valor doado será convertido em  |");
 						System.out.println(" |      alimentos, cobertores, roupas    |");
-						System.out.println(" |    medicamentos e itens de higiene    |");
+						System.out.println(" |    medicamentos e itens de higiene.   |");
+						System.out.println(" |   O pagamento é por boleto bancário.  |");
 						System.out.println(" +---------------------------------------+");
 
 						System.out.println("\n------> Qual Valor você deseja doar: ");
 
 						Float valor = menu.nextFloat();
 
-						System.out.println(" +---------------------------------------+");
-						System.out.printf(" |  Seu boleto de R$ %.2f foi gerado!   |\n", valor);
-						System.out.println(" | Acesso o link para visualizar o boleto|");
+						System.out.println("------> Emitindo o boleto em: ");
+						int i;
+						for (i = 3; i >= 1; i--) {
+							System.out.print("\n " + i);
+						}
+
+						System.out.println(" \n\n +---------------------------------------+");
+						System.out.printf(" |   Seu boleto de R$ %.2f foi gerado!  |\n", valor);
+						System.out.println(" | Acesse o link para visualizar o boleto|");
 						System.out.println(" |    https://ongjavadobem.org/pay       |");
 						System.out.println(" +---------------------------------------+");
-
 						break;
 
 					case 2:
 						System.out.println(" +---------------------------------------+");
-						System.out.println(" |  Suas doações de alimentos devem ser  |");
-						System.out.println(" |  entregues em nosso ponto de coleta,  |");
-						System.out.println(" |     Localizado na Rua Java, Nº 7 - SP |");
-						System.out.println(" |   Horário de Atendimento 08h as 17h.  |");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |        As doações de alimentos        |");
+						System.out.println(" | precisam ser entregues em nosso ponto |");
+						System.out.println(" |   de coleta na Rua Java n° 7 - SP.    |");
+						System.out.println(" |    Horário de Atendimento 08h as 17h. |");
 						System.out.println(" +---------------------------------------+");
 						break;
 
 					case 3:
-						System.out.println(" +-----------------------------------------+");
-						System.out.println(" | Suas doações de roupas/brinquedos devem |");
-						System.out.println(" | ser entregues em nosso ponto de coleta, |");
-						System.out.println(" |    Localizado na Rua Java, Nº 7 - SP    |");
-						System.out.println(" |    Horário de Atendimento 08h as 17h.   |");
-						System.out.println(" +-----------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |    As doações de roupas/brinquedos    |");
+						System.out.println(" | precisam ser entregues em nosso ponto |");
+						System.out.println(" |   de coleta na Rua Java n° 7 - SP.    |");
+						System.out.println(" |    Horário de Atendimento 08h as 17h. |");
+						System.out.println(" +---------------------------------------+");
 						break;
 					default:
 						if (opcao == 0) {
@@ -168,6 +186,9 @@ public class projetoJava {
 					switch (opcao2) {
 					case 1:
 						System.out.println(" +---------------------------------------+");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
 						System.out.println(" |  Todo valor doado será convertido em  |");
 						System.out.println(" |      alimentos, cobertores, roupas    |");
 						System.out.println(" |    medicamentos e itens de higiene    |");
@@ -175,9 +196,16 @@ public class projetoJava {
 						System.out.println("\n------> Qual Valor você deseja doar: ");
 
 						Float valor = menu.nextFloat();
-						System.out.println(" +---------------------------------------+");
-						System.out.printf(" |  Seu boleto de R$ %.2f foi gerado!   |\n", valor);
-						System.out.println(" | Acesso o link para visualizar o boleto|");
+
+						System.out.println("------> Emitindo o boleto em: ");
+						int i;
+						for (i = 3; i >= 1; i--) {
+							System.out.print("\n " + i);
+						}
+
+						System.out.println(" \n\n +---------------------------------------+");
+						System.out.printf(" |   Seu boleto de R$ %.2f foi gerado!  |\n", valor);
+						System.out.println(" | Acesse o link para visualizar o boleto|");
 						System.out.println(" |    https://ongjavadobem.org/pay       |");
 						System.out.println(" +---------------------------------------+");
 
@@ -185,20 +213,26 @@ public class projetoJava {
 
 					case 2:
 						System.out.println(" +---------------------------------------+");
-						System.out.println(" |  Suas doações de alimentos devem ser  |");
-						System.out.println(" |  entregues em nosso ponto de coleta,  |");
-						System.out.println(" |     Localizado na Rua Java, Nº 7 - SP |");
-						System.out.println(" |   Horário de Atendimento 08h as 17h.  |");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |        As doações de alimentos        |");
+						System.out.println(" | precisam ser entregues em nosso ponto |");
+						System.out.println(" |   de coleta na Rua Java n° 7 - SP.    |");
+						System.out.println(" |    Horário de Atendimento 08h as 17h. |");
 						System.out.println(" +---------------------------------------+");
 						break;
 
 					case 3:
-						System.out.println(" +-----------------------------------------+");
-						System.out.println(" | Suas doações de roupas/brinquedos devem |");
-						System.out.println(" | ser entregues em nosso ponto de coleta, |");
-						System.out.println(" |    Localizado na Rua Java, Nº 7 - SP    |");
-						System.out.println(" |    Horário de Atendimento 08h as 17h.   |");
-						System.out.println(" +-----------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |    As doações de roupas/brinquedos    |");
+						System.out.println(" | precisam ser entregues em nosso ponto |");
+						System.out.println(" |   de coleta na Rua Java n° 7 - SP.    |");
+						System.out.println(" |    Horário de Atendimento 08h as 17h. |");
+						System.out.println(" +---------------------------------------+");
 						break;
 					default:
 						if (opcao == 0) {
@@ -256,6 +290,9 @@ public class projetoJava {
 					switch (opcao3) {
 					case 1:
 						System.out.println(" +---------------------------------------+");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
 						System.out.println(" |  Todo valor doado será convertido em  |");
 						System.out.println(" |      alimentos, cobertores, roupas    |");
 						System.out.println(" |    medicamentos e itens de higiene    |");
@@ -263,30 +300,42 @@ public class projetoJava {
 						System.out.println("\n------> Qual Valor você deseja doar: ");
 
 						Float valor = menu.nextFloat();
-						System.out.println(" +---------------------------------------+");
-						System.out.printf(" |  Seu boleto de R$ %.2f foi gerado!   |\n", valor);
-						System.out.println(" | Acesso o link para visualizar o boleto|");
+
+						System.out.println("------> Emitindo o boleto em: ");
+						int i;
+						for (i = 3; i >= 1; i--) {
+							System.out.print("\n " + i);
+						}
+
+						System.out.println(" \n\n +---------------------------------------+");
+						System.out.printf(" |   Seu boleto de R$ %.2f foi gerado!  |\n", valor);
+						System.out.println(" | Acesse o link para visualizar o boleto|");
 						System.out.println(" |    https://ongjavadobem.org/pay       |");
 						System.out.println(" +---------------------------------------+");
 						break;
 
 					case 2:
 						System.out.println(" +---------------------------------------+");
-						System.out.println(" |  Suas doações de alimentos devem ser  |");
-						System.out.println(" |  entregues em nosso ponto de coleta,  |");
-						System.out.println(" |     Localizado na Rua Java - SP       |");
-						System.out.println(" |   Horário de Atendimento 08h as 17h.  |");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |        As doações de alimentos        |");
+						System.out.println(" | precisam ser entregues em nosso ponto |");
+						System.out.println(" |   de coleta na Rua Java n° 7 - SP.    |");
+						System.out.println(" |    Horário de Atendimento 08h as 17h. |");
 						System.out.println(" +---------------------------------------+");
 						break;
 
 					case 3:
-						System.out.println(" +-----------------------------------------+");
-						System.out.println(" | Suas doações de roupas/brinquedos devem |");
-						System.out.println(" | ser entregues em nosso ponto de coleta, |");
-						System.out.println(" |    Localizado na Rua Java, Nº 7 - SP    |");
-						System.out.println(" |    Horário de Atendimento 08h as 17h.   |");
-						System.out.println(" +-----------------------------------------+");
-
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |             MUITO OBRIGADE!           |");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" +---------------------------------------+");
+						System.out.println(" |    As doações de roupas/brinquedos    |");
+						System.out.println(" | precisam ser entregues em nosso ponto |");
+						System.out.println(" |   de coleta na Rua Java n° 7 - SP.    |");
+						System.out.println(" |    Horário de Atendimento 08h as 17h. |");
+						System.out.println(" +---------------------------------------+");
 						break;
 					default:
 						if (opcao == 0) {
