@@ -42,9 +42,5 @@ public class Cadastro {
 
 	}
 
-	/*
-	 * public String getCadastroUsuario() { String cadastroUsuario }
-	 * 
-	 */
-
+	
 }
